@@ -1,0 +1,456 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.homepage{
+    width: 100%;
+    height: 100%;
+    background-color: thistle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/slider/slider-01.jpg);
+    background-size: 100% 100%;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+.navlogo h3{
+    color: rgb(255, 38, 0);
+    font-size: 23;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 12px;
+}
+.pages{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pages ul{
+    list-style: none;
+    display: flex;
+    text-align: right;
+}
+.pages li{
+    margin-left: 30px;
+    color: white;
+    font-size: 20;
+} 
+.caption{
+    width: 50%;
+    text-align: center;
+}
+.caption h1{
+    font-size: 70;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 38, 0);
+    margin:0px;
+}
+.caption h2{
+    margin-bottom: 0px;
+    font-size: 30;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.test{
+    display: inline-flex;
+}
+.const-text{
+    color: wheat;
+    font-size: 27;
+}
+.text-animation{
+  margin-left: 6px;
+  height: 30px;
+  overflow: hidden;
+}
+.text-animation p{
+    color: wheat;
+    list-style: none;
+    font-size: 27.5;
+}
+.text-animation  li{
+    list-style: none;
+    height: 30px;
+    animation-name: up-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes up-down{
+    0%{ transform: translateY(-33px); }
+    50%{ transform: translateY(0px);  }
+    100%{  transform: translateY(-33px) }
+}
+.backgroung{
+    width: 150px;
+    height: 33px;
+    border-left:2px solid white;
+    animation-name: lift-right;
+    animation-duration: 1.5s;
+    animation-delay: 1s;    
+    animation-iteration-count: infinite;
+}
+@keyframes lift-right{
+    50%{ transform: translateX(-125px);  }
+    100% {transform: translateX(6px); }
+}
+.container{
+    width: 95%;
+    margin-top :40px ;
+    padding-top:40px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.image{
+    width: 30%;
+    text-align: center;
+    background-color: black;
+}
+.image img{
+    width: 100%;
+}
+.divborder{
+    width: 30%;
+    height: 520px;
+    border: 10px solid rgb(49, 48, 48);  
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    z-index: -1;
+}  
+.hello{
+    width: 47.5%;
+}
+.box1 h2{
+  font-size: 38;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box1 p{
+    color: rgb(160, 156, 156);
+    font-size: 18;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box2{
+    display: flex;
+    justify-content: space-between;
+
+}
+.first{
+    width: 50%;
+}
+.second{
+    width: 50%;
+}
+.box2 p{
+    color: rgb(160, 156, 156);
+    font-size: 18;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn1{
+    padding: 15px;
+    color: white;
+    background-color: brown;
+    border-radius: 15px;
+    font-size: 20;
+    margin-top: 15px;
+}
+.btn2{
+    padding: 15px;
+    color: white;
+    background-color: brown;
+    border-radius: 15px;
+    font-size: 20;
+    margin-top: 15px;
+}
+.ourServices{
+  width: 100%;
+  background-color: rgb(233, 232, 231);
+  padding: 40px;
+}
+.header{
+    text-align: center;
+    margin: 48px auto;
+}
+.header h2{
+  font-size: 58;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+    width: 70px;
+    height: 0.75px;
+    background-color: red;
+    margin:4px auto;
+}
+.longline{
+    width: 150px;
+    height: 0.75px;
+    background-color: red;
+    margin: 4px auto;
+}
+.container2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Services{
+    width: 23%;
+    text-align: center;
+    background-color: rgb(233, 232, 231);
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+}
+.Services:hover{
+    background-color: white;
+    box-shadow: 0 0 20px rgb(182, 181, 182);
+}
+.Services img{
+    width: 35%;
+    margin: 48px;
+}
+.Services h3{
+    color: black;
+    font-size: 20;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Services p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+}
+.Portfolio{
+    background-color: white;
+}
+.sections{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    background-color: white;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.photos{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.product {
+  width: 30%;
+  background-color: red;
+  margin: 10px;
+}
+.product img{
+  width: 100%;
+  background-color: rgb(160, 156, 156);
+}
+.infopage{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.info{
+    width: 20%;
+    text-align: center;
+    margin: 48px;
+}
+.info img{
+    margin: 10px;
+}
+.info p{
+    font-size: 25;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.info h3{
+    font-size: 20;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Feedback{
+    width: 60%;
+    height: 300px;
+    background:linear-gradient(135deg,red 20%,whitesmoke 20%) ;
+    margin: 40px auto;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.image2{
+    width: 15%;
+    height: 130px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.image img{
+   width: 100%;
+}
+.about{
+    width: 70%;
+    margin: 40px;
+}
+.about h3{
+   font-size: 26;
+   margin-bottom: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.about h4{
+    font-size: 22;
+    margin-bottom: 10px;
+    color: rgb(145, 144, 144);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about p{
+    font-size: 18;
+    color: rgb(141, 138, 138);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about img{
+    width: 20%;
+    height: 25px;
+    margin-top: 40px;
+}
+.OurBlog{
+    background-color: whitesmoke
+}
+.OurBlog h2{ 
+    margin-top: 48px;
+}
+.Our-Blog {
+    padding: 20px;
+}
+.newcontainer{
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+.Blogs{
+    width: 23%;
+    margin: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.Blogs img{
+    width:100% ;
+    height: 40%;
+}
+.Blogs video{
+    width: 100%;
+    height: 198px;      
+}
+.Blogs p{
+    font-size: 15;
+    margin: 15px;
+    color: rgb(92, 91, 91);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Blogs h3{
+    font-size: 21;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Blogs h4{
+    font-size: 16;
+    margin: 20px;
+    color: rgb(92, 91, 91);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form form{
+    width:  60%;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inline input{
+    width: 48%;
+    height: 50px;
+    padding: 15px;
+    border: 1.5px solid tan;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.block input{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1.5px solid tan;
+    border-radius: 10px;
+}
+.block textarea{
+   width: 100%;
+   text-align: start;
+   height: 120px;
+   padding: 10px;
+   border: 1.5px solid tan;
+   border-radius: 10px;
+}
+.lastbotton{
+    height: 45px;
+    padding: 10px 20px;
+    margin-top: 25px;
+    border: 0px ;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+.endpage{
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.icons{
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons img{
+    width: 10%;
+}
+.endpage .text {
+    width: 30%;
+    margin: auto;
+    color: white;
+    font-size: 16;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 5px;
+    padding-left: 40px;
+}
